@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/TaskName_EditText_ViewItem"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:editable="false"
+        android:enabled="false"
+        android:ems="10"
+        android:hint="Task Name" />
+
+    <EditText
+        android:id="@+id/Date_EditText_ViewItem"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TaskName_EditText_ViewItem"
+        android:layout_below="@+id/TaskName_EditText_ViewItem"
+        android:layout_marginTop="18dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Time_EditText_ViewItem"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Date_EditText_ViewItem"
+        android:layout_alignBottom="@+id/Date_EditText_ViewItem"
+        android:layout_alignRight="@+id/TaskName_EditText_ViewItem"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2_ViewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Time_EditText_ViewItem"
+        android:layout_centerVertical="true" >
+
+        <RadioButton
+            android:id="@+id/radio0_ViewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High" />
+
+        <RadioButton
+            android:id="@+id/radio1_ViewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/radio2_ViewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Low" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Close_ViewItem"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="OnClickClose"
+        android:text="Close" />
+
+    <TextView
+        android:id="@+id/textView1_ViewItem"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/Close_ViewItem"
+        android:text="Priority"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/TaskDescription_ViewItem"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/textView1_ViewItem"
+        android:layout_below="@+id/radioGroup2_ViewItem"
+        android:layout_marginTop="18dp"
+        android:editable="false"
+        android:enabled="false"
+        android:ems="10"
+        android:hint="Task Description" />
+
+</RelativeLayout>

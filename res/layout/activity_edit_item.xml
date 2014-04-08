@@ -1,0 +1,125 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/TaskName_EditText_EditItem"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Task Name" />
+
+    <Button
+        android:id="@+id/SetDate_Button_EditItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TaskName_EditText_EditItem"
+        android:layout_below="@+id/TaskName_EditText_EditItem"
+        android:layout_marginTop="16dp"
+        android:onClick="OnClickSetDate"
+        android:text="Set Date" />
+
+    <EditText
+        android:id="@+id/Date_EditText_EditItem"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TaskName_EditText_EditItem"
+        android:layout_alignTop="@+id/SetDate_Button_EditItem"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/SetTime_Button_EditItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/SetDate_Button_EditItem"
+        android:layout_below="@+id/SetDate_Button_EditItem"
+        android:layout_marginTop="15dp"
+        android:onClick="OnClickSetTime"
+        android:text="Set Time" />
+
+    <EditText
+        android:id="@+id/Time_EditText_EditItem"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Date_EditText_EditItem"
+        android:layout_alignTop="@+id/SetTime_Button_EditItem"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2_EditItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Time_EditText_EditItem"
+        android:layout_alignRight="@+id/Time_EditText_EditItem"
+        android:layout_below="@+id/Time_EditText_EditItem"
+        android:layout_marginTop="17dp" >
+
+        <RadioButton
+            android:id="@+id/radio0_EditItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High" />
+
+        <RadioButton
+            android:id="@+id/radio1_EditItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/radio2_EditItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Low" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView1_EditItem"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/radioGroup2_EditItem"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="53dp"
+        android:layout_toLeftOf="@+id/radioGroup2_EditItem"
+        android:text="Priority"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/TaskDescription_EditItem"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_alignRight="@+id/radioGroup2_EditItem"
+        android:layout_below="@+id/radioGroup2_EditItem"
+        android:ems="10"
+        android:hint="Task Description" />
+
+    <Button
+        android:id="@+id/SaveButton_EditItem"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TaskDescription_EditItem"
+        android:layout_alignParentBottom="true"
+        android:onClick="OnClickSave"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/CancelButton_EditItem"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/TaskDescription_EditItem"
+        android:onClick="OnCLickCancel_EditItem"
+        android:text="Cancel" />
+
+</RelativeLayout>

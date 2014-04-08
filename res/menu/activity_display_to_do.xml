@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <item android:id="@+id/hideTasks"
+        android:title="Hide Completed Tasks"
+        android:orderInCategory="200"
+         />
+        <item android:id="@+id/showTasks"
+        android:title="Show Completed Tasks"
+        android:orderInCategory="300"
+         />
+        <item android:id="@+id/Logout" 
+            android:title="Logout" 
+            android:orderInCategory="100" />
+         
+</menu>
